@@ -397,6 +397,11 @@ footer .info-block .links {
   align-items: center;
   gap: 30px;
 }
+.profile-body{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .profile .profile-top .profile-top-right {
   display: flex;
   color: white;
