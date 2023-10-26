@@ -1,0 +1,537 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--main-main-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root {
+  --accent-color: #A6D8D4;
+  --main-color: #363535;
+  --main-main-color: #313131;
+  --hover-color: #8BB9B5;
+  --inactive-color: #C9C9C9;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.__title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 670px;
+}
+.__title span {
+  color: var(--accent-color);
+}
+
+.btn {
+  background-color: var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--accent-color);
+}
+.header .headerBlock .info-block {
+  margin: 31px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headerBlock .info-block .nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main .notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.main .notfound span {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 72px;
+}
+.main .notfound .btn {
+  display: flex;
+  align-items: center;
+}
+
+.main__text-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.main__text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  width: 560px;
+}
+
+.main__text-colored {
+  color: var(--accent-color);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-content {
+  padding: 73px;
+  background-color: var(--main-color);
+  filter: drop-shadow(10px 10px 10px);
+}
+
+.sub-content-forgot {
+  padding: 73px;
+}
+.sub-content-forgot form {
+  width: -moz-min-content;
+  width: min-content;
+}
+.sub-content-forgot form .login-box-1 {
+  display: flex;
+  justify-content: center;
+}
+.sub-content-forgot form .login-box-1 #reset-pass {
+  color: var(--accent-color);
+  font-size: 40px;
+  font-weight: bold;
+}
+.sub-content-forgot form .login-box-1 span {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
+.login-link {
+  color: var(--accent-color);
+}
+
+.input-box, .input-text {
+  width: 470px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.login-box-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logreg-link, .logreg-link:visited {
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--accent-color);
+  justify-self: stretch;
+  justify-content: center;
+}
+
+#login-button, #login-button:visited {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+#reg-button, #reg-button:visited {
+  color: var(--inactive-color);
+  font-weight: bold;
+}
+
+#login-button, #login-button:visited {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+#user-select, #user-select:visited {
+  color: var(--accent-color);
+}
+
+#admin-select, #admin-select:visited {
+  color: var(--inactive-color);
+}
+
+a.forgot, a.forgot:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logreg-link.active {
+  color: var(--accent-color);
+}
+.logreg-link.active #login-button {
+  color: var(--inactive-color);
+}
+
+footer {
+  border-top: 1px solid var(--accent-color);
+  width: 100%;
+}
+footer .info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+footer .info-block .copyright {
+  color: #929292;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+footer .info-block .links {
+  display: flex;
+  gap: 80px;
+}
+
+/* Нахождение и создание команды */
+.findTeam {
+  margin-top: 100px;
+  height: 69vh;
+}
+.findTeam .findTeamBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+.findTeam .findTeamBlock .info-block {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.findTeam .findTeamBlock .info-block select {
+  background-color: transparent;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #8BB9B5;
+}
+.findTeam .findTeamBlock .info-block select option {
+  background-color: var(--main-color);
+  color: #8BB9B5;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.__title {
+  width: 100vw;
+}
+
+.schedule, .tasks {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.schedule .scheduleBlock, .tasks .scheduleBlock {
+  flex-direction: column;
+}
+.schedule .scheduleBlock, .schedule .taskBlock, .tasks .scheduleBlock, .tasks .taskBlock {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 160px;
+  margin: 0px;
+}
+.schedule .scheduleBlock .info-block, .schedule .scheduleBlock .task-info-block, .schedule .scheduleBlock .task-info-block-1, .schedule .taskBlock .info-block, .schedule .taskBlock .task-info-block, .schedule .taskBlock .task-info-block-1, .tasks .scheduleBlock .info-block, .tasks .scheduleBlock .task-info-block, .tasks .scheduleBlock .task-info-block-1, .tasks .taskBlock .info-block, .tasks .taskBlock .task-info-block, .tasks .taskBlock .task-info-block-1 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.schedule .scheduleBlock .info-block .list, .schedule .scheduleBlock .info-block .task-list, .schedule .scheduleBlock .task-info-block .list, .schedule .scheduleBlock .task-info-block .task-list, .schedule .scheduleBlock .task-info-block-1 .list, .schedule .scheduleBlock .task-info-block-1 .task-list, .schedule .taskBlock .info-block .list, .schedule .taskBlock .info-block .task-list, .schedule .taskBlock .task-info-block .list, .schedule .taskBlock .task-info-block .task-list, .schedule .taskBlock .task-info-block-1 .list, .schedule .taskBlock .task-info-block-1 .task-list, .tasks .scheduleBlock .info-block .list, .tasks .scheduleBlock .info-block .task-list, .tasks .scheduleBlock .task-info-block .list, .tasks .scheduleBlock .task-info-block .task-list, .tasks .scheduleBlock .task-info-block-1 .list, .tasks .scheduleBlock .task-info-block-1 .task-list, .tasks .taskBlock .info-block .list, .tasks .taskBlock .info-block .task-list, .tasks .taskBlock .task-info-block .list, .tasks .taskBlock .task-info-block .task-list, .tasks .taskBlock .task-info-block-1 .list, .tasks .taskBlock .task-info-block-1 .task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.schedule .scheduleBlock .info-block .list li, .schedule .scheduleBlock .info-block .task-list li, .schedule .scheduleBlock .task-info-block .list li, .schedule .scheduleBlock .task-info-block .task-list li, .schedule .scheduleBlock .task-info-block-1 .list li, .schedule .scheduleBlock .task-info-block-1 .task-list li, .schedule .taskBlock .info-block .list li, .schedule .taskBlock .info-block .task-list li, .schedule .taskBlock .task-info-block .list li, .schedule .taskBlock .task-info-block .task-list li, .schedule .taskBlock .task-info-block-1 .list li, .schedule .taskBlock .task-info-block-1 .task-list li, .tasks .scheduleBlock .info-block .list li, .tasks .scheduleBlock .info-block .task-list li, .tasks .scheduleBlock .task-info-block .list li, .tasks .scheduleBlock .task-info-block .task-list li, .tasks .scheduleBlock .task-info-block-1 .list li, .tasks .scheduleBlock .task-info-block-1 .task-list li, .tasks .taskBlock .info-block .list li, .tasks .taskBlock .info-block .task-list li, .tasks .taskBlock .task-info-block .list li, .tasks .taskBlock .task-info-block .task-list li, .tasks .taskBlock .task-info-block-1 .list li, .tasks .taskBlock .task-info-block-1 .task-list li {
+  color: #FFF;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  border-bottom: 2px, var(--accent-color);
+}
+.schedule .scheduleBlock .info-block .list:nth-child(1) li, .schedule .scheduleBlock .info-block .task-list:nth-child(1) li, .schedule .scheduleBlock .task-info-block .list:nth-child(1) li, .schedule .scheduleBlock .task-info-block .task-list:nth-child(1) li, .schedule .scheduleBlock .task-info-block-1 .list:nth-child(1) li, .schedule .scheduleBlock .task-info-block-1 .task-list:nth-child(1) li, .schedule .taskBlock .info-block .list:nth-child(1) li, .schedule .taskBlock .info-block .task-list:nth-child(1) li, .schedule .taskBlock .task-info-block .list:nth-child(1) li, .schedule .taskBlock .task-info-block .task-list:nth-child(1) li, .schedule .taskBlock .task-info-block-1 .list:nth-child(1) li, .schedule .taskBlock .task-info-block-1 .task-list:nth-child(1) li, .tasks .scheduleBlock .info-block .list:nth-child(1) li, .tasks .scheduleBlock .info-block .task-list:nth-child(1) li, .tasks .scheduleBlock .task-info-block .list:nth-child(1) li, .tasks .scheduleBlock .task-info-block .task-list:nth-child(1) li, .tasks .scheduleBlock .task-info-block-1 .list:nth-child(1) li, .tasks .scheduleBlock .task-info-block-1 .task-list:nth-child(1) li, .tasks .taskBlock .info-block .list:nth-child(1) li, .tasks .taskBlock .info-block .task-list:nth-child(1) li, .tasks .taskBlock .task-info-block .list:nth-child(1) li, .tasks .taskBlock .task-info-block .task-list:nth-child(1) li, .tasks .taskBlock .task-info-block-1 .list:nth-child(1) li, .tasks .taskBlock .task-info-block-1 .task-list:nth-child(1) li {
+  position: relative;
+}
+.schedule .scheduleBlock .info-block .list:nth-child(1) li::after, .schedule .scheduleBlock .info-block .task-list:nth-child(1) li::after, .schedule .scheduleBlock .task-info-block .list:nth-child(1) li::after, .schedule .scheduleBlock .task-info-block .task-list:nth-child(1) li::after, .schedule .scheduleBlock .task-info-block-1 .list:nth-child(1) li::after, .schedule .scheduleBlock .task-info-block-1 .task-list:nth-child(1) li::after, .schedule .taskBlock .info-block .list:nth-child(1) li::after, .schedule .taskBlock .info-block .task-list:nth-child(1) li::after, .schedule .taskBlock .task-info-block .list:nth-child(1) li::after, .schedule .taskBlock .task-info-block .task-list:nth-child(1) li::after, .schedule .taskBlock .task-info-block-1 .list:nth-child(1) li::after, .schedule .taskBlock .task-info-block-1 .task-list:nth-child(1) li::after, .tasks .scheduleBlock .info-block .list:nth-child(1) li::after, .tasks .scheduleBlock .info-block .task-list:nth-child(1) li::after, .tasks .scheduleBlock .task-info-block .list:nth-child(1) li::after, .tasks .scheduleBlock .task-info-block .task-list:nth-child(1) li::after, .tasks .scheduleBlock .task-info-block-1 .list:nth-child(1) li::after, .tasks .scheduleBlock .task-info-block-1 .task-list:nth-child(1) li::after, .tasks .taskBlock .info-block .list:nth-child(1) li::after, .tasks .taskBlock .info-block .task-list:nth-child(1) li::after, .tasks .taskBlock .task-info-block .list:nth-child(1) li::after, .tasks .taskBlock .task-info-block .task-list:nth-child(1) li::after, .tasks .taskBlock .task-info-block-1 .list:nth-child(1) li::after, .tasks .taskBlock .task-info-block-1 .task-list:nth-child(1) li::after {
+  content: "";
+  position: absolute;
+  width: 580px;
+  height: 1px;
+  top: 38px;
+  left: -50px;
+  background-color: #8BB9B5;
+}
+.schedule .scheduleBlock .info-block .list:nth-child(2), .schedule .scheduleBlock .info-block .task-list:nth-child(2), .schedule .scheduleBlock .task-info-block .list:nth-child(2), .schedule .scheduleBlock .task-info-block .task-list:nth-child(2), .schedule .scheduleBlock .task-info-block-1 .list:nth-child(2), .schedule .scheduleBlock .task-info-block-1 .task-list:nth-child(2), .schedule .taskBlock .info-block .list:nth-child(2), .schedule .taskBlock .info-block .task-list:nth-child(2), .schedule .taskBlock .task-info-block .list:nth-child(2), .schedule .taskBlock .task-info-block .task-list:nth-child(2), .schedule .taskBlock .task-info-block-1 .list:nth-child(2), .schedule .taskBlock .task-info-block-1 .task-list:nth-child(2), .tasks .scheduleBlock .info-block .list:nth-child(2), .tasks .scheduleBlock .info-block .task-list:nth-child(2), .tasks .scheduleBlock .task-info-block .list:nth-child(2), .tasks .scheduleBlock .task-info-block .task-list:nth-child(2), .tasks .scheduleBlock .task-info-block-1 .list:nth-child(2), .tasks .scheduleBlock .task-info-block-1 .task-list:nth-child(2), .tasks .taskBlock .info-block .list:nth-child(2), .tasks .taskBlock .info-block .task-list:nth-child(2), .tasks .taskBlock .task-info-block .list:nth-child(2), .tasks .taskBlock .task-info-block .task-list:nth-child(2), .tasks .taskBlock .task-info-block-1 .list:nth-child(2), .tasks .taskBlock .task-info-block-1 .task-list:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.profile-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 160px;
+  width: 100%;
+}
+.profile .profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.profile .profile-top .profile-top-right {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile .profile-body-top {
+  margin-left: 160px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.damn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.task-info-block-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divider {
+  height: 265px;
+  width: 1px;
+  border-top: 1px solid var(--accent-color);
+  background-color: #A6D8D4;
+}
+
+.taskBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.tasks {
+  display: flex;
+  gap: 50px;
+}
+
+.first {
+  height: 23px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.first::after {
+  content: "";
+  display: flex;
+}
+.first img {
+  height: 23px;
+}
+
+.task-info-block {
+  height: 250px;
+}
+
+.team-select-1 {
+  background-color: transparent;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #8BB9B5;
+}
+.team-select-1 option {
+  background-color: var(--main-color);
+  color: #8BB9B5;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.list-1 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.list-1 li {
+  color: #FFF;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  border-bottom: 2px, var(--accent-color);
+}
+.list-1:nth-child(1) li {
+  position: relative;
+}
+.list-1:nth-child(1) li::after {
+  content: "";
+  position: absolute;
+  width: 750px;
+  height: 1px;
+  top: 38px;
+  left: -50px;
+  background-color: #8BB9B5;
+}
+.list-1:nth-child(2) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.LISTS {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */
